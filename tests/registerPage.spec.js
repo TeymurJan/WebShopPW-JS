@@ -4,7 +4,7 @@ const { RegisterConfirmationPage } = require('../pages/register-confirmation.pag
 
 test.beforeEach(async ({ page }) => {
 	await page.goto('https://demowebshop.tricentis.com/register')
-})
+});
 
 test('Successful registration', async ({ page }) => {
 	const registerPage = new RegisterPage(page);
